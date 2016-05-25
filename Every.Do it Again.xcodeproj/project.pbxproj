@@ -15,6 +15,10 @@
 		43A931E21CF5F87C00E16903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A931E01CF5F87C00E16903 /* Main.storyboard */; };
 		43A931E41CF5F87C00E16903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A931E31CF5F87C00E16903 /* Assets.xcassets */; };
 		43A931E71CF5F87C00E16903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A931E51CF5F87C00E16903 /* LaunchScreen.storyboard */; };
+		43A931F81CF5FA8D00E16903 /* Todo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A931F51CF5FA8D00E16903 /* Todo+CoreDataProperties.m */; };
+		43A931F91CF5FA8D00E16903 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A931F71CF5FA8D00E16903 /* Todo.m */; };
+		43A931FE1CF5FDE500E16903 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A931FD1CF5FDE500E16903 /* ModalViewController.m */; };
+		43A932021CF605B100E16903 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A932011CF605B100E16903 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,14 @@
 		43A931E31CF5F87C00E16903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43A931E61CF5F87C00E16903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43A931E81CF5F87C00E16903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A931F41CF5FA8D00E16903 /* Todo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Todo+CoreDataProperties.h"; path = "../Todo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		43A931F51CF5FA8D00E16903 /* Todo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Todo+CoreDataProperties.m"; path = "../Todo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		43A931F61CF5FA8D00E16903 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Todo.h; path = ../Todo.h; sourceTree = "<group>"; };
+		43A931F71CF5FA8D00E16903 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Todo.m; path = ../Todo.m; sourceTree = "<group>"; };
+		43A931FC1CF5FDE500E16903 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		43A931FD1CF5FDE500E16903 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		43A932001CF605B100E16903 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		43A932011CF605B100E16903 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +75,10 @@
 		43A931D01CF5F87B00E16903 /* Every.Do it Again */ = {
 			isa = PBXGroup;
 			children = (
-				43A931D41CF5F87B00E16903 /* AppDelegate.h */,
-				43A931D51CF5F87B00E16903 /* AppDelegate.m */,
-				43A931DA1CF5F87B00E16903 /* MasterViewController.h */,
-				43A931DB1CF5F87C00E16903 /* MasterViewController.m */,
-				43A931DD1CF5F87C00E16903 /* DetailViewController.h */,
-				43A931DE1CF5F87C00E16903 /* DetailViewController.m */,
 				43A931E01CF5F87C00E16903 /* Main.storyboard */,
-				43A931E31CF5F87C00E16903 /* Assets.xcassets */,
-				43A931E51CF5F87C00E16903 /* LaunchScreen.storyboard */,
-				43A931E81CF5F87C00E16903 /* Info.plist */,
-				43A931D71CF5F87B00E16903 /* Every_Do_it_Again.xcdatamodeld */,
+				43A931FF1CF605A000E16903 /* View */,
+				43A931FB1CF5FAC600E16903 /* View Controller */,
+				43A931FA1CF5FA9A00E16903 /* Model */,
 				43A931D11CF5F87B00E16903 /* Supporting Files */,
 			);
 			path = "Every.Do it Again";
@@ -82,9 +87,48 @@
 		43A931D11CF5F87B00E16903 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43A931D41CF5F87B00E16903 /* AppDelegate.h */,
+				43A931D51CF5F87B00E16903 /* AppDelegate.m */,
 				43A931D21CF5F87B00E16903 /* main.m */,
+				43A931E31CF5F87C00E16903 /* Assets.xcassets */,
+				43A931E51CF5F87C00E16903 /* LaunchScreen.storyboard */,
+				43A931E81CF5F87C00E16903 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A931FA1CF5FA9A00E16903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43A931F41CF5FA8D00E16903 /* Todo+CoreDataProperties.h */,
+				43A931F51CF5FA8D00E16903 /* Todo+CoreDataProperties.m */,
+				43A931F61CF5FA8D00E16903 /* Todo.h */,
+				43A931F71CF5FA8D00E16903 /* Todo.m */,
+				43A931D71CF5F87B00E16903 /* Every_Do_it_Again.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		43A931FB1CF5FAC600E16903 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43A931DA1CF5F87B00E16903 /* MasterViewController.h */,
+				43A931DB1CF5F87C00E16903 /* MasterViewController.m */,
+				43A931DD1CF5F87C00E16903 /* DetailViewController.h */,
+				43A931DE1CF5F87C00E16903 /* DetailViewController.m */,
+				43A931FC1CF5FDE500E16903 /* ModalViewController.h */,
+				43A931FD1CF5FDE500E16903 /* ModalViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		43A931FF1CF605A000E16903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43A932001CF605B100E16903 /* CustomTableViewCell.h */,
+				43A932011CF605B100E16903 /* CustomTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +202,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A931DF1CF5F87C00E16903 /* DetailViewController.m in Sources */,
+				43A931F81CF5FA8D00E16903 /* Todo+CoreDataProperties.m in Sources */,
 				43A931DC1CF5F87C00E16903 /* MasterViewController.m in Sources */,
 				43A931D61CF5F87B00E16903 /* AppDelegate.m in Sources */,
+				43A931FE1CF5FDE500E16903 /* ModalViewController.m in Sources */,
+				43A932021CF605B100E16903 /* CustomTableViewCell.m in Sources */,
 				43A931D91CF5F87B00E16903 /* Every_Do_it_Again.xcdatamodeld in Sources */,
 				43A931D31CF5F87B00E16903 /* main.m in Sources */,
+				43A931F91CF5FA8D00E16903 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

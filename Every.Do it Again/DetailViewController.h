@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *itemTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *itemDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *itemPriorityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *itemStatusLabel;
 
 @end
 
